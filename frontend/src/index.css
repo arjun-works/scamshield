@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+/* A clear keyboard focus ring everywhere (outline, so it also shows in
+   Windows High Contrast mode). */
+:where(a, button, input, select, textarea, summary):focus-visible {
+  outline: 3px solid #0f766e;
+  outline-offset: 2px;
+}
+
+/* Tamil and Devanagari need a little more line height than Latin text. */
+:lang(ta),
+:lang(hi) {
+  line-height: 1.7;
+}
+
+/* Native dialog: dim the page behind it. */
+dialog::backdrop {
+  background: rgb(15 23 42 / 0.55);
+}

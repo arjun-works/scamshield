@@ -1,0 +1,645 @@
+{
+  "conversations": {
+    "scam-01": {
+      "label": "scam",
+      "scam_type": "digital_arrest",
+      "language": "English",
+      "paused": true,
+      "payment_status": "safety_paused",
+      "turns_sent": 2,
+      "signals": [
+        {
+          "type": "secrecy_demand",
+          "confidence": 0.95,
+          "source": "gemini"
+        }
+      ],
+      "models": [
+        "gemini-flash-lite-latest"
+      ],
+      "error": null
+    },
+    "scam-02": {
+      "label": "scam",
+      "scam_type": "digital_arrest",
+      "language": "Tamil",
+      "paused": true,
+      "payment_status": "safety_paused",
+      "turns_sent": 2,
+      "signals": [
+        {
+          "type": "third_party_on_call",
+          "confidence": 0.95,
+          "source": "gemini"
+        },
+        {
+          "type": "fake_official",
+          "confidence": 0.95,
+          "source": "gemini"
+        }
+      ],
+      "models": [
+        "gemini-flash-lite-latest"
+      ],
+      "error": null
+    },
+    "scam-03": {
+      "label": "scam",
+      "scam_type": "fake_kyc",
+      "language": "Hindi",
+      "paused": true,
+      "payment_status": "safety_paused",
+      "turns_sent": 2,
+      "signals": [
+        {
+          "type": "fake_official",
+          "confidence": 0.95,
+          "source": "gemini"
+        },
+        {
+          "type": "threat_of_arrest_or_freeze",
+          "confidence": 0.95,
+          "source": "gemini"
+        },
+        {
+          "type": "third_party_on_call",
+          "confidence": 0.8,
+          "source": "gemini"
+        }
+      ],
+      "models": [
+        "gemini-flash-lite-latest"
+      ],
+      "error": null
+    },
+    "scam-04": {
+      "label": "scam",
+      "scam_type": "investment",
+      "language": "English",
+      "paused": true,
+      "payment_status": "safety_paused",
+      "turns_sent": 2,
+      "signals": [
+        {
+          "type": "promised_returns",
+          "confidence": 0.95,
+          "source": "gemini"
+        }
+      ],
+      "models": [
+        "gemini-flash-lite-latest"
+      ],
+      "error": null
+    },
+    "scam-05": {
+      "label": "scam",
+      "scam_type": "job",
+      "language": "English",
+      "paused": true,
+      "payment_status": "safety_paused",
+      "turns_sent": 2,
+      "signals": [
+        {
+          "type": "promised_returns",
+          "confidence": 0.9,
+          "source": "gemini"
+        }
+      ],
+      "models": [
+        "gemini-flash-lite-latest"
+      ],
+      "error": null
+    },
+    "scam-06": {
+      "label": "scam",
+      "scam_type": "parcel",
+      "language": "Tamil",
+      "paused": true,
+      "payment_status": "safety_paused",
+      "turns_sent": 2,
+      "signals": [
+        {
+          "type": "fake_official",
+          "confidence": 0.9,
+          "source": "gemini"
+        }
+      ],
+      "models": [
+        "gemini-flash-lite-latest"
+      ],
+      "error": null
+    },
+    "scam-07": {
+      "label": "scam",
+      "scam_type": "lottery",
+      "language": "English",
+      "paused": true,
+      "payment_status": "safety_paused",
+      "turns_sent": 2,
+      "signals": [
+        {
+          "type": "fee_to_release",
+          "confidence": 0.95,
+          "source": "gemini"
+        }
+      ],
+      "models": [
+        "gemini-flash-lite-latest"
+      ],
+      "error": null
+    },
+    "scam-08": {
+      "label": "scam",
+      "scam_type": "electricity_bill",
+      "language": "English",
+      "paused": true,
+      "payment_status": "safety_paused",
+      "turns_sent": 2,
+      "signals": [
+        {
+          "type": "threat_of_arrest_or_freeze",
+          "confidence": 0.95,
+          "source": "gemini"
+        },
+        {
+          "type": "urgency_pressure",
+          "confidence": 0.9,
+          "source": "gemini"
+        }
+      ],
+      "models": [
+        "gemini-flash-lite-latest"
+      ],
+      "error": null
+    },
+    "scam-09": {
+      "label": "scam",
+      "scam_type": "safe_account",
+      "language": "English",
+      "paused": true,
+      "payment_status": "safety_paused",
+      "turns_sent": 2,
+      "signals": [
+        {
+          "type": "fake_official",
+          "confidence": 0.95,
+          "source": "gemini"
+        }
+      ],
+      "models": [
+        "gemini-flash-lite-latest"
+      ],
+      "error": null
+    },
+    "scam-10": {
+      "label": "scam",
+      "scam_type": "loan_fee",
+      "language": "Hindi",
+      "paused": true,
+      "payment_status": "safety_paused",
+      "turns_sent": 2,
+      "signals": [
+        {
+          "type": "fee_to_release",
+          "confidence": 0.9,
+          "source": "gemini"
+        }
+      ],
+      "models": [
+        "gemini-flash-lite-latest"
+      ],
+      "error": null
+    },
+    "genuine-01": {
+      "label": "genuine",
+      "scam_type": null,
+      "language": "English",
+      "paused": false,
+      "payment_status": "held",
+      "turns_sent": 3,
+      "signals": [],
+      "models": [
+        "gemini-flash-lite-latest"
+      ],
+      "error": null
+    },
+    "genuine-02": {
+      "label": "genuine",
+      "scam_type": null,
+      "language": "English",
+      "paused": false,
+      "payment_status": "held",
+      "turns_sent": 3,
+      "signals": [],
+      "models": [
+        "gemini-flash-lite-latest"
+      ],
+      "error": null
+    },
+    "genuine-03": {
+      "label": "genuine",
+      "scam_type": null,
+      "language": "Tamil",
+      "paused": false,
+      "payment_status": "held",
+      "turns_sent": 3,
+      "signals": [],
+      "models": [
+        "gemini-flash-lite-latest"
+      ],
+      "error": null
+    },
+    "genuine-04": {
+      "label": "genuine",
+      "scam_type": null,
+      "language": "Hindi",
+      "paused": false,
+      "payment_status": "held",
+      "turns_sent": 3,
+      "signals": [],
+      "models": [
+        "gemini-flash-lite-latest"
+      ],
+      "error": null
+    },
+    "genuine-05": {
+      "label": "genuine",
+      "scam_type": null,
+      "language": "English",
+      "paused": false,
+      "payment_status": "held",
+      "turns_sent": 3,
+      "signals": [],
+      "models": [
+        "gemini-flash-lite-latest"
+      ],
+      "error": null
+    },
+    "genuine-06": {
+      "label": "genuine",
+      "scam_type": null,
+      "language": "Tamil",
+      "paused": false,
+      "payment_status": "held",
+      "turns_sent": 3,
+      "signals": [],
+      "models": [
+        "gemini-flash-lite-latest"
+      ],
+      "error": null
+    },
+    "genuine-07": {
+      "label": "genuine",
+      "scam_type": null,
+      "language": "English",
+      "paused": false,
+      "payment_status": "held",
+      "turns_sent": 3,
+      "signals": [],
+      "models": [
+        "gemini-flash-lite-latest"
+      ],
+      "error": null
+    },
+    "genuine-08": {
+      "label": "genuine",
+      "scam_type": null,
+      "language": "English",
+      "paused": false,
+      "payment_status": "held",
+      "turns_sent": 3,
+      "signals": [],
+      "models": [
+        "gemini-flash-lite-latest"
+      ],
+      "error": null
+    },
+    "genuine-09": {
+      "label": "genuine",
+      "scam_type": null,
+      "language": "English",
+      "paused": false,
+      "payment_status": "held",
+      "turns_sent": 3,
+      "signals": [],
+      "models": [
+        "gemini-flash-lite-latest"
+      ],
+      "error": null
+    },
+    "genuine-10": {
+      "label": "genuine",
+      "scam_type": null,
+      "language": "English",
+      "paused": false,
+      "payment_status": "held",
+      "turns_sent": 3,
+      "signals": [],
+      "models": [
+        "gemini-flash-lite-latest"
+      ],
+      "error": null
+    }
+  },
+  "messages": {
+    "fake_kyc": {
+      "type": "fake_kyc",
+      "input": "screenshot",
+      "expected_signals": [
+        "threat_of_arrest_or_freeze",
+        "urgency_pressure",
+        "suspicious_link"
+      ],
+      "paused": true,
+      "payment_status": "safety_paused",
+      "turns_sent": 1,
+      "signals": [
+        {
+          "type": "threat_of_arrest_or_freeze",
+          "confidence": 0.95,
+          "source": "gemini"
+        },
+        {
+          "type": "suspicious_link",
+          "confidence": 0.95,
+          "source": "gemini"
+        },
+        {
+          "type": "fake_official",
+          "confidence": 0.9,
+          "source": "gemini"
+        },
+        {
+          "type": "urgency_pressure",
+          "confidence": 0.9,
+          "source": "gemini"
+        }
+      ],
+      "models": [
+        "gemini-flash-lite-latest"
+      ],
+      "error": null
+    },
+    "digital_arrest": {
+      "type": "digital_arrest",
+      "input": "screenshot",
+      "expected_signals": [
+        "threat_of_arrest_or_freeze",
+        "fake_official",
+        "secrecy_demand",
+        "safe_account_transfer"
+      ],
+      "paused": true,
+      "payment_status": "safety_paused",
+      "turns_sent": 1,
+      "signals": [
+        {
+          "type": "fake_official",
+          "confidence": 0.99,
+          "source": "gemini"
+        },
+        {
+          "type": "threat_of_arrest_or_freeze",
+          "confidence": 0.99,
+          "source": "gemini"
+        },
+        {
+          "type": "third_party_on_call",
+          "confidence": 0.99,
+          "source": "gemini"
+        },
+        {
+          "type": "secrecy_demand",
+          "confidence": 0.99,
+          "source": "gemini"
+        },
+        {
+          "type": "safe_account_transfer",
+          "confidence": 0.99,
+          "source": "gemini"
+        },
+        {
+          "type": "urgency_pressure",
+          "confidence": 0.95,
+          "source": "gemini"
+        }
+      ],
+      "models": [
+        "gemini-flash-lite-latest"
+      ],
+      "error": null
+    },
+    "investment": {
+      "type": "investment",
+      "input": "screenshot",
+      "expected_signals": [
+        "promised_returns",
+        "urgency_pressure"
+      ],
+      "paused": true,
+      "payment_status": "safety_paused",
+      "turns_sent": 1,
+      "signals": [
+        {
+          "type": "promised_returns",
+          "confidence": 0.95,
+          "source": "gemini"
+        },
+        {
+          "type": "urgency_pressure",
+          "confidence": 0.85,
+          "source": "gemini"
+        }
+      ],
+      "models": [
+        "gemini-flash-lite-latest"
+      ],
+      "error": null
+    },
+    "job": {
+      "type": "job",
+      "input": "screenshot",
+      "expected_signals": [
+        "promised_returns",
+        "fee_to_release"
+      ],
+      "paused": true,
+      "payment_status": "safety_paused",
+      "turns_sent": 1,
+      "signals": [
+        {
+          "type": "promised_returns",
+          "confidence": 0.95,
+          "source": "gemini"
+        },
+        {
+          "type": "fee_to_release",
+          "confidence": 0.95,
+          "source": "gemini"
+        }
+      ],
+      "models": [
+        "gemini-flash-lite-latest"
+      ],
+      "error": null
+    },
+    "parcel": {
+      "type": "parcel",
+      "input": "screenshot",
+      "expected_signals": [
+        "fee_to_release",
+        "urgency_pressure",
+        "suspicious_link"
+      ],
+      "paused": true,
+      "payment_status": "safety_paused",
+      "turns_sent": 1,
+      "signals": [
+        {
+          "type": "fee_to_release",
+          "confidence": 0.95,
+          "source": "gemini"
+        },
+        {
+          "type": "suspicious_link",
+          "confidence": 0.9,
+          "source": "gemini"
+        },
+        {
+          "type": "urgency_pressure",
+          "confidence": 0.8,
+          "source": "gemini"
+        }
+      ],
+      "models": [
+        "gemini-flash-lite-latest"
+      ],
+      "error": null
+    },
+    "lottery": {
+      "type": "lottery",
+      "input": "screenshot",
+      "expected_signals": [
+        "fee_to_release",
+        "otp_or_credential_request"
+      ],
+      "paused": true,
+      "payment_status": "safety_paused",
+      "turns_sent": 1,
+      "signals": [
+        {
+          "type": "fee_to_release",
+          "confidence": 0.95,
+          "source": "gemini"
+        },
+        {
+          "type": "otp_or_credential_request",
+          "confidence": 0.95,
+          "source": "gemini"
+        }
+      ],
+      "models": [
+        "gemini-flash-lite-latest"
+      ],
+      "error": null
+    },
+    "electricity_bill": {
+      "type": "electricity_bill",
+      "input": "screenshot",
+      "expected_signals": [
+        "urgency_pressure",
+        "suspicious_link"
+      ],
+      "paused": true,
+      "payment_status": "safety_paused",
+      "turns_sent": 1,
+      "signals": [
+        {
+          "type": "threat_of_arrest_or_freeze",
+          "confidence": 0.9,
+          "source": "gemini"
+        },
+        {
+          "type": "fake_official",
+          "confidence": 0.9,
+          "source": "gemini"
+        },
+        {
+          "type": "urgency_pressure",
+          "confidence": 0.9,
+          "source": "gemini"
+        },
+        {
+          "type": "suspicious_link",
+          "confidence": 0.8,
+          "source": "gemini"
+        }
+      ],
+      "models": [
+        "gemini-flash-lite-latest"
+      ],
+      "error": null
+    },
+    "fake_refund": {
+      "type": "fake_refund",
+      "input": "screenshot",
+      "expected_signals": [
+        "fee_to_release",
+        "otp_or_credential_request",
+        "suspicious_link",
+        "fake_official"
+      ],
+      "paused": true,
+      "payment_status": "safety_paused",
+      "turns_sent": 1,
+      "signals": [
+        {
+          "type": "fake_official",
+          "confidence": 0.95,
+          "source": "gemini"
+        },
+        {
+          "type": "fee_to_release",
+          "confidence": 0.95,
+          "source": "gemini"
+        },
+        {
+          "type": "suspicious_link",
+          "confidence": 0.95,
+          "source": "gemini"
+        },
+        {
+          "type": "otp_or_credential_request",
+          "confidence": 0.95,
+          "source": "gemini"
+        }
+      ],
+      "models": [
+        "gemini-flash-lite-latest"
+      ],
+      "error": null
+    },
+    "prompt_injection": {
+      "type": "prompt_injection",
+      "input": "pasted text",
+      "expected_signals": [
+        "embedded_instructions"
+      ],
+      "paused": true,
+      "payment_status": "safety_paused",
+      "turns_sent": 1,
+      "signals": [
+        {
+          "type": "embedded_instructions",
+          "confidence": 0.99,
+          "source": "gemini"
+        }
+      ],
+      "models": [
+        "gemini-flash-lite-latest"
+      ],
+      "error": null
+    }
+  },
+  "completed_on": "2026-10-10"
+}

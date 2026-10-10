@@ -1,0 +1,31 @@
+[project]
+name = "scamshield-backend"
+version = "0.1.0"
+description = "ScamShield: fraud and scam protection API (FastAPI + XGBoost + Gemini)"
+requires-python = ">=3.12,<3.13"
+# ML (xgboost, shap) and agent (google-adk) deps are added in their own phases.
+dependencies = [
+    "fastapi",
+    "uvicorn[standard]",
+    "google-genai",
+    "google-cloud-firestore",
+    "python-dotenv",
+    "xgboost>=3.4.1",
+    "shap>=0.52.0",
+    "pandas>=3.0.6",
+    "google-adk>=2.11.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest",
+    "httpx",
+    "scikit-learn>=1.9.1",
+    "matplotlib>=3.11.2",
+    "ipykernel>=7.4.0",
+    "nbconvert>=7.17.1",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

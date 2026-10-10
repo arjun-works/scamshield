@@ -1,0 +1,498 @@
+{
+  "trained_on": "2026-10-08",
+  "data": {
+    "rows": 6362620,
+    "frauds": 8213,
+    "steps": [
+      1,
+      743
+    ],
+    "unique_senders": 6353307,
+    "repeat_senders": 9298,
+    "max_txns_per_sender": 3,
+    "share_rows_from_repeat_senders": 0.002925052887018241,
+    "by_type": {
+      "CASH_IN": {
+        "rows": 1399284,
+        "frauds": 0
+      },
+      "CASH_OUT": {
+        "rows": 2237500,
+        "frauds": 4116
+      },
+      "DEBIT": {
+        "rows": 41432,
+        "frauds": 0
+      },
+      "PAYMENT": {
+        "rows": 2151495,
+        "frauds": 0
+      },
+      "TRANSFER": {
+        "rows": 532909,
+        "frauds": 4097
+      }
+    },
+    "share_first_payment_to_payee": 1.0,
+    "fraud_share_draining_account": 0.9782052843053696,
+    "legit_share_draining_account": 0.0
+  },
+  "split": {
+    "train_steps": [
+      1,
+      323
+    ],
+    "valid_steps": [
+      324,
+      354
+    ],
+    "test_steps": [
+      355,
+      743
+    ]
+  },
+  "scale_pos_weight": 23.125598418709995,
+  "trees": 67,
+  "train": {
+    "rows": 1951895,
+    "frauds": 3643,
+    "fraud_rate": 0.001866391378634609
+  },
+  "valid": {
+    "rows": 266010,
+    "frauds": 312,
+    "fraud_rate": 0.0011728882372843126,
+    "pr_auc": 0.9338278989537886,
+    "roc_auc": 0.9998746528495528
+  },
+  "test": {
+    "rows": 552504,
+    "frauds": 4258,
+    "fraud_rate": 0.007706731534975312,
+    "pr_auc": 0.9845158961152268,
+    "roc_auc": 0.9998117091865727
+  },
+  "valid_thresholds": [
+    {
+      "threshold": 0.01,
+      "flagged": 872,
+      "frauds_caught": 312,
+      "precision": 0.3577981651376147,
+      "recall": 1.0,
+      "false_alarms": 560
+    },
+    {
+      "threshold": 0.05,
+      "flagged": 830,
+      "frauds_caught": 312,
+      "precision": 0.3759036144578313,
+      "recall": 1.0,
+      "false_alarms": 518
+    },
+    {
+      "threshold": 0.1,
+      "flagged": 808,
+      "frauds_caught": 312,
+      "precision": 0.38613861386138615,
+      "recall": 1.0,
+      "false_alarms": 496
+    },
+    {
+      "threshold": 0.2,
+      "flagged": 795,
+      "frauds_caught": 312,
+      "precision": 0.39245283018867927,
+      "recall": 1.0,
+      "false_alarms": 483
+    },
+    {
+      "threshold": 0.3,
+      "flagged": 794,
+      "frauds_caught": 312,
+      "precision": 0.3929471032745592,
+      "recall": 1.0,
+      "false_alarms": 482
+    },
+    {
+      "threshold": 0.5,
+      "flagged": 780,
+      "frauds_caught": 310,
+      "precision": 0.3974358974358974,
+      "recall": 0.9935897435897436,
+      "false_alarms": 470
+    },
+    {
+      "threshold": 0.7,
+      "flagged": 609,
+      "frauds_caught": 302,
+      "precision": 0.49589490968801314,
+      "recall": 0.967948717948718,
+      "false_alarms": 307
+    },
+    {
+      "threshold": 0.8,
+      "flagged": 387,
+      "frauds_caught": 277,
+      "precision": 0.7157622739018088,
+      "recall": 0.8878205128205128,
+      "false_alarms": 110
+    },
+    {
+      "threshold": 0.9,
+      "flagged": 294,
+      "frauds_caught": 258,
+      "precision": 0.8775510204081632,
+      "recall": 0.8269230769230769,
+      "false_alarms": 36
+    },
+    {
+      "threshold": 0.95,
+      "flagged": 264,
+      "frauds_caught": 254,
+      "precision": 0.9621212121212122,
+      "recall": 0.8141025641025641,
+      "false_alarms": 10
+    },
+    {
+      "threshold": 0.99,
+      "flagged": 230,
+      "frauds_caught": 228,
+      "precision": 0.991304347826087,
+      "recall": 0.7307692307692307,
+      "false_alarms": 2
+    }
+  ],
+  "test_thresholds": [
+    {
+      "threshold": 0.01,
+      "flagged": 5505,
+      "frauds_caught": 4248,
+      "precision": 0.7716621253405994,
+      "recall": 0.9976514795678723,
+      "false_alarms": 1257
+    },
+    {
+      "threshold": 0.05,
+      "flagged": 5403,
+      "frauds_caught": 4248,
+      "precision": 0.7862298722931704,
+      "recall": 0.9976514795678723,
+      "false_alarms": 1155
+    },
+    {
+      "threshold": 0.1,
+      "flagged": 5357,
+      "frauds_caught": 4248,
+      "precision": 0.7929811461638977,
+      "recall": 0.9976514795678723,
+      "false_alarms": 1109
+    },
+    {
+      "threshold": 0.2,
+      "flagged": 5335,
+      "frauds_caught": 4248,
+      "precision": 0.7962511715089035,
+      "recall": 0.9976514795678723,
+      "false_alarms": 1087
+    },
+    {
+      "threshold": 0.3,
+      "flagged": 5327,
+      "frauds_caught": 4248,
+      "precision": 0.7974469682748263,
+      "recall": 0.9976514795678723,
+      "false_alarms": 1079
+    },
+    {
+      "threshold": 0.5,
+      "flagged": 5275,
+      "frauds_caught": 4240,
+      "precision": 0.8037914691943128,
+      "recall": 0.9957726632221701,
+      "false_alarms": 1035
+    },
+    {
+      "threshold": 0.7,
+      "flagged": 4831,
+      "frauds_caught": 4141,
+      "precision": 0.8571724280687228,
+      "recall": 0.9725223109441052,
+      "false_alarms": 690
+    },
+    {
+      "threshold": 0.8,
+      "flagged": 4180,
+      "frauds_caught": 3910,
+      "precision": 0.9354066985645934,
+      "recall": 0.918271488961954,
+      "false_alarms": 270
+    },
+    {
+      "threshold": 0.9,
+      "flagged": 3839,
+      "frauds_caught": 3740,
+      "precision": 0.9742120343839542,
+      "recall": 0.878346641615782,
+      "false_alarms": 99
+    },
+    {
+      "threshold": 0.95,
+      "flagged": 3676,
+      "frauds_caught": 3629,
+      "precision": 0.9872143634385201,
+      "recall": 0.8522780648191639,
+      "false_alarms": 47
+    },
+    {
+      "threshold": 0.99,
+      "flagged": 3359,
+      "frauds_caught": 3330,
+      "precision": 0.9913664781184877,
+      "recall": 0.7820573038985439,
+      "false_alarms": 29
+    }
+  ],
+  "thresholds": {
+    "medium": 0.01,
+    "high": 0.71,
+    "critical": 0.94
+  },
+  "valid_tier_cutoffs": [
+    {
+      "threshold": 0.01,
+      "flagged": 872,
+      "frauds_caught": 312,
+      "precision": 0.3577981651376147,
+      "recall": 1.0,
+      "false_alarms": 560
+    },
+    {
+      "threshold": 0.71,
+      "flagged": 595,
+      "frauds_caught": 302,
+      "precision": 0.507563025210084,
+      "recall": 0.967948717948718,
+      "false_alarms": 293
+    },
+    {
+      "threshold": 0.94,
+      "flagged": 266,
+      "frauds_caught": 254,
+      "precision": 0.9548872180451128,
+      "recall": 0.8141025641025641,
+      "false_alarms": 12
+    }
+  ],
+  "test_at_0.90": {
+    "threshold": 0.9,
+    "flagged": 3839,
+    "frauds_caught": 3740,
+    "precision": 0.9742120343839542,
+    "recall": 0.878346641615782,
+    "false_alarms": 99
+  },
+  "test_at_0.99": {
+    "threshold": 0.99,
+    "flagged": 3359,
+    "frauds_caught": 3330,
+    "precision": 0.9913664781184877,
+    "recall": 0.7820573038985439,
+    "false_alarms": 29
+  },
+  "valid_tiers": [
+    {
+      "tier": "Low",
+      "payments": 265138,
+      "share": 0.9967219277470771,
+      "frauds": 0,
+      "fraud_rate": 0.0,
+      "share_of_all_fraud": 0.0
+    },
+    {
+      "tier": "Medium",
+      "payments": 277,
+      "share": 0.0010413142363069057,
+      "frauds": 10,
+      "fraud_rate": 0.036101083032490974,
+      "share_of_all_fraud": 0.03205128205128205
+    },
+    {
+      "tier": "High",
+      "payments": 329,
+      "share": 0.0012367956091876246,
+      "frauds": 48,
+      "fraud_rate": 0.1458966565349544,
+      "share_of_all_fraud": 0.15384615384615385
+    },
+    {
+      "tier": "Critical",
+      "payments": 266,
+      "share": 0.0009999624074282921,
+      "frauds": 254,
+      "fraud_rate": 0.9548872180451128,
+      "share_of_all_fraud": 0.8141025641025641
+    }
+  ],
+  "test_tiers": [
+    {
+      "tier": "Low",
+      "payments": 546999,
+      "share": 0.9900362712306155,
+      "frauds": 10,
+      "fraud_rate": 1.8281569070510183e-05,
+      "share_of_all_fraud": 0.0023485204321277596
+    },
+    {
+      "tier": "Medium",
+      "payments": 725,
+      "share": 0.0013122076944239317,
+      "frauds": 128,
+      "fraud_rate": 0.17655172413793102,
+      "share_of_all_fraud": 0.030061061531235323
+    },
+    {
+      "tier": "High",
+      "payments": 1070,
+      "share": 0.001936637562804975,
+      "frauds": 466,
+      "fraud_rate": 0.4355140186915888,
+      "share_of_all_fraud": 0.10944105213715359
+    },
+    {
+      "tier": "Critical",
+      "payments": 3710,
+      "share": 0.0067148835121555684,
+      "frauds": 3654,
+      "fraud_rate": 0.9849056603773585,
+      "share_of_all_fraud": 0.8581493658994833
+    }
+  ],
+  "tier_precision_targets": {
+    "medium": 0.25,
+    "high": 0.5,
+    "critical": 0.95
+  },
+  "full_class_ratio_run": {
+    "rows": 552504,
+    "frauds": 4258,
+    "fraud_rate": 0.007706731534975312,
+    "pr_auc": 0.9837891226103227,
+    "roc_auc": 0.9997369361626511,
+    "class_ratio": 534.7933022234422,
+    "at_0.90": {
+      "threshold": 0.9,
+      "flagged": 5245,
+      "frauds_caught": 4226,
+      "precision": 0.8057197330791229,
+      "recall": 0.9924847346171912,
+      "false_alarms": 1019
+    },
+    "at_0.99": {
+      "threshold": 0.99,
+      "flagged": 4099,
+      "frauds_caught": 3868,
+      "precision": 0.9436447914125397,
+      "recall": 0.9084077031470174,
+      "false_alarms": 231
+    }
+  },
+  "ablation_without_balance_features": {
+    "rows": 552504,
+    "frauds": 4258,
+    "fraud_rate": 0.007706731534975312,
+    "pr_auc": 0.5809827257895424,
+    "roc_auc": 0.9458669261735636
+  },
+  "shap_importance": [
+    {
+      "feature": "amount_to_balance_ratio",
+      "label": "Share of the sender's balance being moved",
+      "mean_abs_shap": 2.5818846225738525
+    },
+    {
+      "feature": "payee_balance_before",
+      "label": "Payee's balance before the payment",
+      "mean_abs_shap": 0.5577352643013
+    },
+    {
+      "feature": "sender_balance_before",
+      "label": "Sender's balance before the payment",
+      "mean_abs_shap": 0.33144301176071167
+    },
+    {
+      "feature": "amount",
+      "label": "Payment amount",
+      "mean_abs_shap": 0.2396509349346161
+    },
+    {
+      "feature": "hour_of_day",
+      "label": "Hour of day",
+      "mean_abs_shap": 0.1781570315361023
+    },
+    {
+      "feature": "payee_distinct_senders_before",
+      "label": "Number of different people who paid this payee before",
+      "mean_abs_shap": 0.15738341212272644
+    },
+    {
+      "feature": "type_is_transfer",
+      "label": "Payment type (transfer vs cash-out)",
+      "mean_abs_shap": 0.09625865519046783
+    },
+    {
+      "feature": "payee_inflow_amount_24h",
+      "label": "Money received by this payee in the last 24 hours",
+      "mean_abs_shap": 0.08988352864980698
+    },
+    {
+      "feature": "payee_inflow_count_24h",
+      "label": "Payments received by this payee in the last 24 hours",
+      "mean_abs_shap": 0.039431992918252945
+    }
+  ],
+  "shap_example": {
+    "score": 0.9990668892860413,
+    "factors": [
+      {
+        "feature": "amount_to_balance_ratio",
+        "label": "Share of the sender's balance being moved",
+        "value": 1.0,
+        "shap_value": 7.24,
+        "direction": "increases risk",
+        "text": "The payment moves 100% of the sender's balance."
+      },
+      {
+        "feature": "sender_balance_before",
+        "label": "Sender's balance before the payment",
+        "value": 1669143.57,
+        "shap_value": 1.7768,
+        "direction": "increases risk",
+        "text": "The sender's balance before the payment was 1,669,144."
+      },
+      {
+        "feature": "amount",
+        "label": "Payment amount",
+        "value": 1669143.57,
+        "shap_value": 1.7673,
+        "direction": "increases risk",
+        "text": "The payment amount is 1,669,144."
+      },
+      {
+        "feature": "type_is_transfer",
+        "label": "Payment type (transfer vs cash-out)",
+        "value": 0.0,
+        "shap_value": 0.7967,
+        "direction": "increases risk",
+        "text": "The payment is a cash-out."
+      },
+      {
+        "feature": "hour_of_day",
+        "label": "Hour of day",
+        "value": 23.0,
+        "shap_value": 0.6397,
+        "direction": "increases risk",
+        "text": "The payment was made at around 23:00."
+      }
+    ]
+  }
+}

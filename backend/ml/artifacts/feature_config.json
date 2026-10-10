@@ -1,0 +1,69 @@
+{
+  "model_file": "model.json",
+  "trained_on": "2026-10-08",
+  "features": [
+    "amount",
+    "type_is_transfer",
+    "hour_of_day",
+    "sender_balance_before",
+    "amount_to_balance_ratio",
+    "payee_balance_before",
+    "payee_distinct_senders_before",
+    "payee_inflow_count_24h",
+    "payee_inflow_amount_24h"
+  ],
+  "feature_labels": {
+    "amount": "Payment amount",
+    "type_is_transfer": "Payment type (transfer vs cash-out)",
+    "hour_of_day": "Hour of day",
+    "sender_balance_before": "Sender's balance before the payment",
+    "amount_to_balance_ratio": "Share of the sender's balance being moved",
+    "payee_balance_before": "Payee's balance before the payment",
+    "payee_distinct_senders_before": "Number of different people who paid this payee before",
+    "payee_inflow_count_24h": "Payments received by this payee in the last 24 hours",
+    "payee_inflow_amount_24h": "Money received by this payee in the last 24 hours"
+  },
+  "excluded_features": [
+    "is_first_payment_to_payee"
+  ],
+  "model_types": [
+    "TRANSFER",
+    "CASH_OUT"
+  ],
+  "out_of_scope_tier": "Low",
+  "inflow_types": [
+    "TRANSFER",
+    "CASH_OUT",
+    "PAYMENT",
+    "DEBIT"
+  ],
+  "payee_window_steps": 24,
+  "ratio_cap": 100.0,
+  "dropped_leaky_columns": [
+    "newbalanceOrig",
+    "newbalanceDest",
+    "isFlaggedFraud"
+  ],
+  "tier_thresholds": {
+    "medium": 0.01,
+    "high": 0.71,
+    "critical": 0.94
+  },
+  "split": {
+    "train_steps": [
+      1,
+      323
+    ],
+    "valid_steps": [
+      324,
+      354
+    ],
+    "test_steps": [
+      355,
+      743
+    ]
+  },
+  "scale_pos_weight": 23.125598418709995,
+  "test_pr_auc": 0.9845158961152268,
+  "test_roc_auc": 0.9998117091865727
+}

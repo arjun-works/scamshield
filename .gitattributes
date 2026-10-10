@@ -1,0 +1,4 @@
+# Keep line endings predictable across Windows and the Linux build.
+* text=auto
+Dockerfile text eol=lf
+*.png binary

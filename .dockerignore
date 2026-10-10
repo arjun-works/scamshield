@@ -1,0 +1,16 @@
+# Keep the build context small and keep secrets and data out of the image.
+.git
+.env
+.env.*
+.claude
+data
+frontend
+scripts
+**/.venv
+**/__pycache__
+**/.pytest_cache
+**/.ipynb_checkpoints
+backend/tests
+backend/ml/*.ipynb
+docs/*
+!docs/policies.md

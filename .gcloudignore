@@ -1,0 +1,18 @@
+# What `gcloud run deploy --source .` does NOT upload to Cloud Build.
+# Same idea as .dockerignore: no secrets, no datasets, no frontend.
+.git
+.gitignore
+.env
+.env.*
+.claude
+data/
+frontend/
+scripts/
+**/.venv/
+**/__pycache__/
+**/.pytest_cache/
+**/.ipynb_checkpoints/
+backend/tests/
+backend/ml/*.ipynb
+docs/*
+!docs/policies.md
