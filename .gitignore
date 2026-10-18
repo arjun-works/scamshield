@@ -31,3 +31,7 @@ frontend/dist/
 .idea/
 Thumbs.db
 .DS_Store
+
+# Local-only files: competition deck and video, and the AI assistant's working notes
+submission/
+CLAUDE.md
